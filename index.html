@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      // Phones: the screens are 393 px Figma frames; scale the whole page to the screen width like the webviews do.
+      (function () {
+        var w = Math.min(screen.width, screen.height);
+        if (w <= 480 && w !== 393) {
+          document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=393, viewport-fit=cover');
+        }
+      })();
+    </script>
+    <meta name="theme-color" content="#f2f4f7" />
+    <link rel="icon" href="data:," />
+    <title>Прототип «Выходные»</title>
+    <script type="module" crossorigin src="./assets/index-Cy27AhQO.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-c6U1SZdi.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
